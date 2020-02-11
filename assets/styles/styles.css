@@ -7,7 +7,7 @@ body {
     background-position: top;
     background-attachment: fixed;
     background-size: cover; */
-  }
+  } */
 
 
   /* Sections  */
@@ -18,7 +18,7 @@ body {
 }
 
 .img-area {
-    width: 30%;
+    width: 10%;
     float: left;
     /* background-color: whitesmoke */
 }
@@ -26,199 +26,134 @@ body {
 .img-area img {
     width: 40%;
     box-shadow: 0 2px 20px rgba(0,0,0,0.9);
+} */
+
+/* Accordion */
+p {
+  margin: 0 0 5px;
 }
 
-.tab-section {
-    margin: 0px auto;
-    padding-top: 0 1em;
-    width: 65%;
-    float: left;
+a, label {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
 }
 
-.tab-area {
-    position: relative;
-    width: 100%;
-    color: #000;
-    height: auto;
+a:hover {
+  color: #ddd;
 }
 
-input {
-    position: absolute;
+.menu a {
+  display: block;
+  padding: 10px 15px;
+}
+
+.drop-down a {
+  min-width: 90px;
+}
+
+.drop-down-menu {
+  display: block;
+}
+
+.menu-title {
+  cursor: pointer;
+}
+
+.menu-title {
+  display:block;
+  padding: 10px 15px;
+}
+
+.activate {
+  display: none;
+
+  position: absolute;
+  cursor: pointer;
+  width: 100%;
+  height: 40px;
+  margin: 0 0 0 -15px;
+  opacity: 0;
+}
+
+/* Skin */
+
+.menu a, .drop-down-menu {
+  background: #3d6d99;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#5796d0), color-stop(100%,#3d6d99));
+    background: -moz-linear-gradient(top, #5796d0 0%, #3d6d99 100%);
+}
+
+.menu a:hover, .drop-down-menu:hover {
+  background: #5a6470;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#495261), color-stop(100%,#38404b));
+  background: -moz-linear-gradient(top, #495261 0%, #38404b 100%);
+}
+
+.drop-down a {
+  background: #222;
+}
+
+.drop-down a:hover {
+  background: #111;
+}
+
+
+.menu  {
+  background: #3d6d99;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#5796d0), color-stop(100%,#3d6d99));
+  background: -moz-linear-gradient(top, #5796d0 0%, #3d6d99 100%);
+}
+
+:checked ~ .menu-title {
+  background: #495261;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#495261), color-stop(100%,#38404b));
+  background: -moz-linear-gradient(top, #495261 0%, #38404b 100%);
+}
+
+.drop-down {
+  max-height: 0;
+  overflow: hidden;
+}
+
+.drop-down a {
+  background: #222;
+}
+
+.activate:checked ~ .drop-down {
+  max-height: 200px;
+}
+
+.drop-down, .menu a, .drop-down-menu {
+  -webkit-transform: translateZ(0);  
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+@keyframes acc_in {
+  0% {
     opacity: 0;
-    z-index: -1;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
-label {
-    background: #61516172;
-    border: 1px solid #fff;
-    cursor: pointer;
-    display: block;
-    font-size: 22px;
-    line-height: 2;
-    padding: 0 0 0 1em;
-    position: relative;
-    transition: all 0.3s ease 0s;
-    color: #fff;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+@keyframes acc_out {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
 }
-
-label:hover {
-    background: #000;
-    color: #fff;
-}
-
-.tab-content {
-    background: #fff;
-    max-height: 0p;
-    height: 1200;
-    overflow: auto;
-    padding: 0 15px;
-    -webkit-transition: max-height  .35s;
-    -o-transition: max-height  .35s;
-    transition: max-height  .35s;
-    font-size: 24px;
-    color: #262626;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    /* line-height: 34px; */
-}
-
-input:checked ~ .tab-content {
-    max-height:  12em;
-}
-
-label:before,
-label::after {
-    content: '';
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 30px;
-    height: 90px;
-    background-color: #fff;
-    transition: transform 0.25s ease-out;
-}
-
-label:before {
-    top: 8px;
-    right: 25px;
-    width: 3px;
-    height: 20px;
-    background: #fff;
-}
-
-label:after {
-    top: 50%;
-    right: 15px;
-    width: 23px;
-    height: 3px;
-    background: #fff;
-    margin-top: -2px;
-}
-
-/* projects */
-.main-container {
-    position: relative;
-
-    /* padding-top: -20px */
-  }
-  
-  .main-section {
-    position: relative;
-    height: 6000px;
-
-  }
-  
-  .card {
-    position: relative;
-    float: left;
-    width: 400px;
-    height: 350px;
-    margin-top: 50px;
-    margin-left: 80px;
-    margin-right: 60px;
-    margin-bottom: -20px;
-    background-color: #67808d;
-    color: black;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
-  }
-  
-  .card2 {
-    position: relative;
-    float: left;
-    width: auto;
-    height: 260px;
-    margin-top: 50px;
-    margin-left: 80px;
-    margin-right: 60px;
-    margin-bottom: -20px;
-    background-color: #67808d;
-    color: black;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
-  }
-  
-  .card-img-top {
-    position: relative;
-    margin-top: 5px;
-    width: 390px;
-    overflow: hidden;
-    height: 250px
-  }
-  
-  .card-img-top2 {
-    position: relative;
-    margin-top: 9px;
-    padding-bottom: 9px;
-    width: 375px;
-    overflow: hidden;
-    height: 120px
-  }
-  .card-img-top3 {
-    position: relative;
-    margin-top: 1px;
-    padding-bottom: 2px;
-    width: 375px;
-    overflow: hidden;
-    height: 120px
-  }
-  
-  .card-img-profile {
-    position: relative;
-    margin-top: 50px;
-    width: auto;
-    overflow: hidden;
-  }
-    
-  .card h3{
-    position: relative;
-    width: auto;
-    height: 40px;
-    font-size: 20px;
-    padding: 5px;
-    margin-bottom: 5px;
-    font-weight: 300;
-    line-height: 30px;
-    color: #ffffff;
-    text-align: center;
-    background: #aa4a57
-  }
-    
-  .card h4{
-    position: relative;
-    font-size: 13px;
-    padding-top: 5px;
-    color: white;
-    text-align: center
-  }
-    
-  .card h5{
-    font-size: 10px;
-    margin-top: 60px;
-    padding-top: 5px;
-    background-color: goldenrod;
-    color: black;
-    text-align: center
-  }
-  
 
 /* responsive */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
