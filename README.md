@@ -22,3 +22,6 @@ Access this site at: **https://sstott09.github.io/PortfolioV3/**
 <li>Bootstrap: https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css</li>
 <li>JavaScript: https://unpkg.com/scrollreveal/dist/scrollreveal.min.js<br>
 <li>JQuery (https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js)</li>
+
+# Future Revisions
+Already looking forward to implementing some new features and a bit more artistic flare.
