@@ -9,6 +9,10 @@ body {
   font-weight: 300;
 }
 
+li {
+font-size: 14pt;
+line-height: 1.5;
+}
 /* Navigation Bar */
 .navbar a,
 .sec-about p {
@@ -158,16 +162,16 @@ hr {
   font-family: 'Open Sans';
   font-size: 18pt;
   text-align: center;
-  color: black;
+  color: white;
 }
 
 .sec-services {
-  background: url("https://i.pinimg.com/originals/90/a2/fb/90a2fbbe96e05303e97474ec46497693.png");
+  background: url("https://www.lexcelera.com/wp-content/uploads/2011/01/Multicolor.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-color: #666;
-  opacity: 50%;
+  color: white;
+  /* background-color: #666; */
   /* background: #f9f9f9; */
 }
 
@@ -287,4 +291,10 @@ footer {
   color: #fff;
   border-radius: 50%;
   border: 2px solid;
+}
+
+footer p {
+color: white;
+font-size: 9pt;
+margin-top: 20px
 }
