@@ -77,7 +77,6 @@ h3 {
   color: #fff;
 }
 
-
 .container > h1 {
   font-weight: 300;
   text-align: center;
@@ -193,6 +192,10 @@ hr {
   text-align: center;
 }
 
+.col-md-4 {
+  padding-bottom: 20px;
+}
+
 h4 {
   padding-top: .5em;
   font-family: 'Orbitron';
@@ -230,9 +233,12 @@ h4 {
 .sec-testimonials p {
   text-align: justify;
   padding-left: 40px;
-
 }
 
+.sec-testimonials p.text-right {
+  font-size: 14px;
+  color: #666;
+}
 /*Contact*/
 
 .form-group {
@@ -257,7 +263,7 @@ h4 {
 /*Footer*/
 
 footer {
-  background: #000;
+  background: rgb(128, 30, 30);
 }
 
 .soc-media-ul {
@@ -276,9 +282,4 @@ footer {
   color: #fff;
   border-radius: 50%;
   border: 2px solid;
-  
-  &:hover,
-  &:focus {
-    color: $red;
-  }
 }

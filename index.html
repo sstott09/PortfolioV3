@@ -7,6 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Steven M Stott | Portfolio</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
@@ -31,10 +32,6 @@
 
     <nav class="navbar navbar-expand-sm bg-info navbar-dark fixed-top">
         <a class="navbar-brand" href="#">Steven M Stott</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="collapsibleNavbar">  
       <ul class="navbar-nav">
         <li class="nav-item">
           <a class="nav-link" href="#section1">About Me |</a>
@@ -54,16 +51,15 @@
             <li class="nav-item">
                 <a class="nav-link" href="#section6">Contact Me</a>
               </li>
-        
-      
-
       </ul>
     </nav>
         
   <section id="home" class="sec-main">
+  <div class="showcase-center">
   <h1 class="main-heading">meraki</h1><br>
   <br>
   <h2>(v.) to do something with soul, creativity, or love; <br>to put something of yourself in your work.</h2>
+</div>
 </section>
 
 <section id="about" class="sec-about">
@@ -131,11 +127,14 @@
     <div class="row">
       <div class="col-md-12">
         <a href="https://drive.google.com/open?id=19I4jiCVBo7iRoGTub9C1U7XM0OcwZ8Fa" rel="preconnect">
+          <div class="button">
           <button type="button" class="btn btn-info">Resume</button> 
           <hr />
         </div>
+        </div>
     </div>
 
+    <div class="work1">
     <div class="row">
         <div class="col-md-4">
           <a href="https://www.aboutamazon.com/working-at-amazon/our-global-offices" rel="preconnect">
@@ -149,8 +148,10 @@
           <a href="https://www.masqueradefundraising.com/" rel="preconnect">
           <img class="center-block" src="../PortfolioV3/assets/images/apex-masquerade.png" width="100%">
         </div>
+      </div>
     </div>
 
+    <div class="work2">
     <div class="row">
         <div class="col-md-4">
           <a href="https://newsroom.sprint.com/about-us/?INTNAV=Footer:AboutUs" rel="preconnect">
@@ -166,6 +167,7 @@
           <a href="https://www.artinstitutes.edu/" rel="preconnect">
           <img class="center" src="../PortfolioV3/assets/images/art-institute-of-colorado.png" width="60%"></a>
         </div>
+    </div>
     </div>
   </div>
 </section>
@@ -331,7 +333,6 @@
     </div>
   </div>
 </section>
-</body>
 
 <footer id="footer">
   <div class="container">
@@ -351,4 +352,57 @@
     </ul>
   </div>
 </footer>
-</div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy30i35EouyE=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<script>
+  window.sr = ScrollReveal();
+  sr.reveal('.showcase-center', {
+    duration: 2000,
+    origin: 'top',
+    distance: '500px'
+  });
+  sr.reveal('.navbar', {
+    duration: 7000,
+    origin: 'top',
+    distance: '500px'
+  });
+  sr.reveal('#section2', {
+    duration: 3000,
+    origin: 'top',
+    distance: "200px",
+    viewFactor: 0.2
+  });  
+  sr.reveal('.work1', {
+    duration: 3000,
+    origin: 'left',
+    distance: "200px",
+    viewFactor: 0.2
+  });  
+  sr.reveal('.work2', {
+    duration: 3000,
+    origin: 'right',
+    distance: "200px",
+    viewFactor: 0.2
+  });  
+  sr.reveal('.button', {
+    duration: 9000,
+    viewFactor: 2
+  });  
+  sr.reveal('#section4', {
+    duration: 3000,
+    origin: 'left',
+    distance: "900px",
+    viewFactor: 0.2
+  });
+  sr.reveal('#footer', {
+    duration: 3000,
+    origin: 'bottom',
+    distance: "200px",
+    viewFactor: 0.2
+  });  
+  </script>
+</body>
+
+</html>
