@@ -10,7 +10,7 @@
 With this revision, I've incorporated several new techniques, as well as technologies.
 
 # Technical Features
-This application uses HTML5, CSS/Bootstrap (for media responsiveness), as well as JavaScript & Jquery scripts to handle the animation and smooth scrolling.
+This application uses HTML5, CSS/Bootstrap (for media responsiveness), as well as JavaScript & Jquery scripts to handle the animation and smooth scrolling. Also included a Contact Form (via Formspree) to deliver messages to my personal email.
 
 # Demo Application
 Access this site at: **https://sstott09.github.io/PortfolioV3/**
