@@ -10,7 +10,7 @@ body {
 }
 
 li {
-font-size: 14pt;
+font-size: .5em;
 line-height: 1.5;
 }
 /* Navigation Bar */
@@ -20,11 +20,17 @@ line-height: 1.5;
 }
 
 .navbar a {
-  font-size: 16px;
+  font-size: .75em;
 }
 
+/* .nav-link {
+  font-size: .5em;
+  float: right
+} */
+
 .navbar .fa-external-link {
-  font-size: 10px;
+  font-size: 1em;
+  float: right
 }
 
 .col-md-3 {
@@ -51,13 +57,13 @@ line-height: 1.5;
   z-index: 2;
   padding: 0;
   margin: auto;
-  height: 40px;
+  height: .5em;
   color: #fff;
   font-family: 'Orbitron';
-  font-size: 96pt;
+  font-size: 3em;
   font-weight: 300;
   text-align: center;
-  letter-spacing: 21px;
+  letter-spacing: .2em;
   text-transform: uppercase;
 }
 
@@ -202,7 +208,7 @@ hr {
   text-align: center;
 }
 
-.col-md-4 {
+.col-sm-4 {
   padding-bottom: 20px;
 }
 
