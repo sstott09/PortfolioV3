@@ -247,11 +247,16 @@ h4 {
 /*Endorsements*/
 .sec-testimonials p {
   text-align: justify;
-  padding-left: 40px;
+  padding-left: 20px;
 }
 
-.sec-testimonials p.text-right {
-  font-size: 14px;
+.text-justify {
+  font-size: 11pt;
+}
+
+p.text-right {
+  font-size: 11pt;
+  padding-bottom: 20pt;
   color: #666;
 }
 /*Contact*/
@@ -279,6 +284,8 @@ h4 {
 
 footer {
   background: rgb(128, 30, 30);
+  height: 3em;
+  padding-top: -40px;
 }
 
 .soc-media-ul {
@@ -302,5 +309,6 @@ footer {
 footer p {
 color: white;
 font-size: 9pt;
-margin-top: 20px
+margin-top: 20px;
+padding-bottom: 60px
 }
